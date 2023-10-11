@@ -1,0 +1,35 @@
+nav {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 70px;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.main {
+    margin: 40px;
+    text-align: center;
+}
+
+.last {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.codes {
+    text-align: center;
+    margin-left: 480px;
+    width: 500px;
+    padding: 10px;
+    background: beige;
+}
+
+.codes > div{
+    text-align: left;
+}
