@@ -1,0 +1,38 @@
+.upl {
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.other {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    margin: 50px;
+    position: relative;
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.codes {
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 10px;
+    background: beige;
+}
+
+.codes > div {
+    text-align: left;
+    margin-left: 100px;
+}
