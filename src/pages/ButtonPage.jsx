@@ -1,5 +1,6 @@
 import style from './ButtonPage.module.css'
-import {MalButton} from 'mal-react-component'
+// import {MalButton} from 'mal-react-component'
+import {MalButton} from '../../public/dist-component/mal-react-components.es.js'
 
 const use = `
 import {MalButton} from "mal-react-component";

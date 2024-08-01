@@ -1,5 +1,5 @@
-import {MalGrid, MalGridItem} from "mal-react-component";
-// import {MalGrid, MalGridItem} from "../../public/dist-component/mal-react-components.es.js";
+import {MalGrid, MalGridItem} from '../../public/dist-component/mal-react-components.es.js'
+// import {MalGrid, MalGridItem} from "mal-react-component";
 import style from './GridPage.module.css'
 
 const use = `
