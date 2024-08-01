@@ -7,7 +7,7 @@ import './App.css'
 import {GridPage} from "./pages/GridPage.jsx";
 import CardPage from "./pages/Card3DPage.jsx";
 import Ball3DPage from "./pages/Ball3DPage.jsx";
-import ProjectCardPage from "./pages/projectCardPage.jsx";
+import ProjectCardPage from "./pages/ProjectCardPage.jsx";
 
 function App() {
     const [isActive, setActive] = useState('');
