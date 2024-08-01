@@ -7,6 +7,7 @@ import './App.css'
 import {GridPage} from "./pages/GridPage.jsx";
 import CardPage from "./pages/Card3DPage.jsx";
 import Ball3DPage from "./pages/Ball3DPage.jsx";
+import ProjectCardPage from "./pages/projectCardPage.jsx";
 
 function App() {
     const [isActive, setActive] = useState('');
@@ -42,6 +43,10 @@ function App() {
                             to: '/3d/card'
                         },
                         {
+                            name: '3d项目卡片',
+                            to: '/3d/project-card'
+                        },
+                        {
                             name: '3d小球',
                             to: '/3d/ball'
                         },
@@ -66,6 +71,9 @@ function App() {
                 </Route>
                 <Route path='/3d/card'>
                     <Route index element={<CardPage/>}/>
+                </Route>
+                <Route path='/3d/project-card'>
+                    <Route index element={<ProjectCardPage/>}/>
                 </Route>
                 <Route path='/3d/ball'>
                     <Route index element={<Ball3DPage/>}/>
