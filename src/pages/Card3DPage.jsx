@@ -1,5 +1,6 @@
-import {services} from '../constants'
-import {Mal3DCard} from 'mal-react-component'
+import { Mal3DCard } from "../../public/dist-component/mal-react-components.es.js";
+import { services } from '../constants';
+// import {Mal3DCard} from "mal-react-components";
 
 let code1 = `
             <Mal3DCard index={0}
@@ -20,7 +21,7 @@ let code3 = `
 const Card3DPage = () => {
 
     return (
-        <div className={'flex-col gap-12 w-screen h-screen flex items-center justify-center'}>
+        <div className={'p-4 flex-col gap-12 w-screen h-screen flex items-center justify-center'}>
             {/*{services.map((service, index) => (*/}
             <Mal3DCard
                 key={services[0].title} index={0} {...services[0]} />
@@ -35,7 +36,17 @@ const Card3DPage = () => {
             <Mal3DCard
                 size={'sm'}
                 key={services[2].title} index={2} {...services[2]} />
+
+            <Mal3DCard
+                size={'md'}
+                key={services[2].title} index={2} {...services[2]} />
+
+            <Mal3DCard
+                size={'lg'}
+                key={services[2].title} index={2} {...services[2]} />
             <code className={'bg-amber-200 p-4 rounded-lg'}>{code3}</code>
+
+            <div></div>
         </div>
     );
 };

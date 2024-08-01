@@ -6,6 +6,7 @@ import {useState} from "react";
 import './App.css'
 import {GridPage} from "./pages/GridPage.jsx";
 import CardPage from "./pages/Card3DPage.jsx";
+import Ball3DPage from "./pages/Ball3DPage.jsx";
 
 function App() {
     const [isActive, setActive] = useState('');
@@ -40,6 +41,10 @@ function App() {
                             name: '可翻转卡片',
                             to: '/3d/card'
                         },
+                        {
+                            name: '3d小球',
+                            to: '/3d/ball'
+                        },
                     ].map((item) => (
                         <li
                             onClick={() => setActive(item.name)}
@@ -61,6 +66,9 @@ function App() {
                 </Route>
                 <Route path='/3d/card'>
                     <Route index element={<CardPage/>}/>
+                </Route>
+                <Route path='/3d/ball'>
+                    <Route index element={<Ball3DPage/>}/>
                 </Route>
                 {/*<Route path='/upload'>*/}
                 {/*    <Route index element={<UploadPage/>}/>*/}
