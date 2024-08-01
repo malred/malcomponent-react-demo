@@ -1,19 +1,17 @@
-import {MalButton} from "mal-react-component";
 import ButtonPage from "./pages/ButtonPage.jsx";
 import {Link, Outlet} from "react-router-dom";
 import {Routes, Route} from 'react-router-dom'
 import HomePage from "./pages/HomePage.jsx";
 import {useState} from "react";
-// import style from './App.css'
 import './App.css'
 import {GridPage} from "./pages/GridPage.jsx";
-import {UploadPage} from "./pages/Upload/UploadPage.jsx";
+import CardPage from "./pages/Card3DPage.jsx";
 
 function App() {
     const [isActive, setActive] = useState('');
 
     return (
-        <>
+        <div className={'w-screen h-screen'}>
             <nav>
                 welcome to MalComponents
             </nav>
@@ -34,9 +32,13 @@ function App() {
                             name: '网格布局',
                             to: '/grid'
                         },
+                        // {
+                        //     name: '文件上传',
+                        //     to: '/upload'
+                        // },
                         {
-                            name: '文件上传',
-                            to: '/upload'
+                            name: '可翻转卡片',
+                            to: '/3d/card'
                         },
                     ].map((item) => (
                         <li
@@ -57,11 +59,14 @@ function App() {
                 <Route path='/grid'>
                     <Route index element={<GridPage/>}/>
                 </Route>
-                <Route path='/upload'>
-                    <Route index element={<UploadPage/>}/>
+                <Route path='/3d/card'>
+                    <Route index element={<CardPage/>}/>
                 </Route>
+                {/*<Route path='/upload'>*/}
+                {/*    <Route index element={<UploadPage/>}/>*/}
+                {/*</Route>*/}
             </Routes>
-        </>
+        </div>
     )
 }
 

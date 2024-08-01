@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mal-react-component": "file:../mal-react-component",
+    "mal-react-component": "file:..\\mal-react-component",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0"
